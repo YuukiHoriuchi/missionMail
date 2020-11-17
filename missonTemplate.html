@@ -1,0 +1,153 @@
+<html>
+    <head>
+
+      <style>
+        a{
+          color: #00BBC7;
+        }
+        .main{
+          position: absolute;
+          width: 600px;
+          height: 696px;
+          left: 420px;
+          top: 0px;
+          background: #FFFFFF;
+        }
+        .receiptOfMessage{
+          /* 受信できない場合はこちらをクリック */
+          position: absolute;
+          width: 500px;
+          height: 21px;
+          left: 5px;
+          top: 89px;
+          font-family: Noto Sans CJK JP;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 18px;
+          color: #000000;
+        }
+        .mission{
+          /* ミッションの時間だよ！ */
+          position: static;
+          width: 500px;
+          height: 36px;
+          left: 0px;
+          top: 290px;
+          font-family: Noto Sans CJK JP;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 27px;
+          text-align: center;
+          color: #000000;
+          /* Inside Auto Layout */
+          flex: none;
+          order: 1;
+          align-self: center;
+          flex-grow: 0;
+          margin: 0px 20px;
+        }
+        .btn{
+          /* btn */
+          display: flex;
+          flex-direction: column;
+          position: static;
+          width: 500px;
+          left: 552px;
+          top: 463px;
+
+          /* main-#00BBC7 */
+          background: #00BBC7;
+          border-radius: 8px;
+        }
+        .mainMission{
+          text-align: center;
+          font-size: 16px;
+          left: 552px;
+          color: #ffffff;
+        }
+        .logo {
+          position: absolute;
+          left: 17%;
+          right: 15%;
+          top: 3%;
+          bottom: 0%;
+          flex: none;
+          order: 0;
+          align-self: center;
+          flex-grow: 0;
+          margin: 0px 10px;
+        }
+        .pokesera{
+          /* img */
+          position: static;
+          width: 500px;
+          height: 270px;
+          left: 0px;
+          top: 0px;
+          /* White_#ffffff */
+          background: #FFFFFF;
+          /* Gray 5 */
+          border: 1px solid #E0E0E0;
+          box-sizing: border-box;
+          /* Inside Auto Layout */
+          flex: none;
+          order: 0;
+          align-self: center;
+          flex-grow: 0;
+          margin: 0px 20px;
+        }
+      </style>
+    </head>
+    <body style="-webkit-text-size-adjust:100%">
+      <table class="main" width=”100%” cellpadding=”0” cellspacing=”0” style=width:100%; margin:0 auto; max-width: 600px”>
+      <tr>
+      <td>
+        <table>
+            <td>
+              <br><br>
+              <img class="logo" src="/image/logo.png"><br><br><br>
+            </td>
+          </tr>
+          <tr>
+            <td class="receiptOfMessage">
+              正しく表示されない場合は<a href="#">こちらをクリック</a><br><br>
+            </td>
+          </tr>
+          <tr>
+            <td class="pokesera">
+              <img src="image/pokesera.png">
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td style="text-align: center;">
+              <br>
+              <p class="mission">ミッションの時間だよ！！</p>
+              <br>
+              <a href="#" class="btn"><p class="mainMission">やるぞ！！</p></a>
+              <br>
+            </td>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td>
+        <p style="font-size: 14px;">
+          <b>このメールはアプリの通知メールです</b>
+        </p>
+        <p style="font-size: 12px;">
+          通知時間を変更、または通知を解除したい場合は<a href="#">こちら</a><br>
+          ※スマートフォンで閲覧されている場合は、アプリ「設定・その他」の「メール通知」から<br>
+          変更してください。<br>
+          <br>
+          運営会社：株式会社バックテック<br>
+          <br>
+        </p>
+      </td>
+      </tr>
+      </table>
+    </body>
+</html>
