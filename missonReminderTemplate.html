@@ -1,5 +1,12 @@
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<meta http-equiv="content-type" content="text/html; charset=iso-2022-jp">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
     <head>
+      <meta http-equiv="Content-Language" content="ja" />
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" width=device-width" />
+    </head>
+    <body>
       <style>
         body{
           -webkit-text-size-adjust:100%
@@ -39,23 +46,6 @@
           flex-grow: 0;
           margin: 0px 20px;
         }
-        .btn{
-          /* btn */
-          position: static;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          flex-direction: column;
-          text-align: center;
-          margin: 0px 160px;
-          height: 50px;
-          width: 320px;
-          left: 552px;
-          top: 463px;
-          /* main-#00BBC7 */
-          background: #00BBC7;
-          border-radius: 8px;
-        }
         .pokesera{
           /* img */
           position: static;
@@ -77,16 +67,8 @@
         .explanation{
           font-size: 12px;
         }
-        .toMission{
-          color: #ffffff;
-          line-height: 50px;
-          text-align: center;
-          margin: 80px;
-        }
       </style>
-    </head>
-    <body>
-      <table class="main" width=”100%” cellpadding=”0” cellspacing=”0”>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%; border:none; margin:0 auto; max-width: 600px;">
         <tr>
           <td style="text-align: center;">
             <br><br>
@@ -102,12 +84,12 @@
           <td style="text-align: center;">
             <br>
             <p class="mission">ミッションの時間だよ🎵🎵</p><br>
-            <button class="btn"><a class="toMission" href={{missionLink}} >ミッション詳細を見る</a></button>
+            <button style="position: static; display: block; margin-left: auto; margin-right: auto; flex-direction: column; margin: 0px 160px; height: 50px; width: 320px; left: 552px; top: 463px; background: #00BBC7; border-radius: 8px;"><a href={{missionContentLink}} style="color: #ffffff; line-height: 50px; margin: 0px 80px 0px 80px;">ミッション詳細を見る</a></button><br><br>
           </td>
         </tr>
         <tr>
           <td class="explanation">
-            ミッション内容・時間の変更は<a href={{missionLink}} style="color: #00BBC7;">こちら</a>からセラピストにご依頼ください。<br>
+            ミッション内容・時間の変更は<a href={{missionCommentLink}} style="color: #00BBC7;">こちら</a>からセラピストにご依頼ください。<br>
             運営会社：株式会社バックテック
           </td>
         </tr>
