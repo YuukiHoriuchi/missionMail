@@ -1,36 +1,27 @@
 <html>
     <head>
-
       <style>
-        a{
-          color: #00BBC7;
+        body{
+          -webkit-text-size-adjust:100%
+        }
+        table{
+          width:100%;
+          margin:0 auto;
+          max-width: 600px"
         }
         .main{
           position: absolute;
           width: 600px;
           height: 696px;
-          left: 420px;
-          top: 0px;
+          left: 100px;
+          right: 100px;
+          top: 10px;
           background: #FFFFFF;
-        }
-        .receiptOfMessage{
-          /* 受信できない場合はこちらをクリック */
-          position: absolute;
-          width: 500px;
-          height: 21px;
-          left: 5px;
-          top: 89px;
-          font-family: Noto Sans CJK JP;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 12px;
-          line-height: 18px;
-          color: #000000;
         }
         .mission{
           /* ミッションの時間だよ！ */
           position: static;
-          width: 500px;
+          width: 600px;
           height: 36px;
           left: 0px;
           top: 290px;
@@ -50,23 +41,20 @@
         }
         .btn{
           /* btn */
-          display: flex;
-          flex-direction: column;
           position: static;
-          margin: 0px 100px;
-          width: 340px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          flex-direction: column;
+          text-align: center;
+          margin: 0px 160px;
+          height: 50px;
+          width: 320px;
           left: 552px;
           top: 463px;
-
           /* main-#00BBC7 */
           background: #00BBC7;
           border-radius: 8px;
-        }
-        .mainMission{
-          text-align: center;
-          font-size: 16px;
-          left: 552px;
-          color: #ffffff;
         }
         .pokesera{
           /* img */
@@ -76,7 +64,7 @@
           left: 0px;
           top: 0px;
           /* White_#ffffff */
-          background: #FFFFFF;
+          background: #ffffff;
           /* Gray 5 */
           border: 1px solid #E0E0E0;
           box-sizing: border-box;
@@ -86,50 +74,43 @@
           align-self: center;
           flex-grow: 0;
         }
+        .explanation{
+          font-size: 12px;
+        }
+        .toMission{
+          color: #ffffff;
+          line-height: 50px;
+          text-align: center;
+          margin: 80px;
+        }
       </style>
     </head>
-    <body style="-webkit-text-size-adjust:100%">
-      <table class="main" width=”100%” cellpadding=”0” cellspacing=”0” style=width:100%; margin:0 auto; max-width: 600px”>
-      <tr>
-      <td>
-        <table>
-            <td style="text-align: center;">
-              <br><br>
-              <img src="https://pockettherapist.azureedge.net/mail/missionTime/logo.png"><br><br><br>
-            </td>
-          </tr>
-          <tr>
-            <td class="pokesera">
-              <img src="https://pockettherapist.azureedge.net/mail/missionTime/missionTime.png">
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td style="text-align: center;">
-              <br>
-              <p class="mission">ミッションの時間だよ🎵🎵</p>
-              <p>ポケセラさんと一緒にミッションやりましょう！</p>
-              <a href{{missionLink}} class="btn"><p class="mainMission">やるぞ〜！</p></a>
-              <br>
-            </td>
-        </table>
-      </td>
-      </tr>
-      <tr>
-      <td>
-        <p style="font-size: 12px; color: grey;">このメールはアプリの通知メールです。</p>
-        <p style="font-size: 12px;">
-          ミッション内容の変更、ミッション時間の変更は質問・コメントを利用して担当セラピストに<br>
-          ご依頼くださいませ。<br>
-          リンク先は<a href={{missionLink}}>こちら</a>でございます。<br>
-          ※閲覧されている場合は、アプリ「設定・その他」の「メール通知」から変更してください。<br>
-          <br>
-          運営会社：株式会社バックテック<br>
-          <br>
-        </p>
-      </td>
-      </tr>
+    <body>
+      <table class="main" width=”100%” cellpadding=”0” cellspacing=”0”>
+        <tr>
+          <td style="text-align: center;">
+            <br><br>
+            <img src="https://pockettherapist.azureedge.net/mail/missionTime/logo.png"><br><br>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">
+            <img class="pokesera" src="https://pockettherapist.azureedge.net/mail/missionTime/missionTime.png">
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center;">
+            <br>
+            <p class="mission">ミッションの時間だよ🎵🎵</p><br>
+            <button class="btn"><a class="toMission" href={{missionLink}} >ミッション詳細を見る</a></button>
+          </td>
+        </tr>
+        <tr>
+          <td class="explanation">
+            ミッション内容・時間の変更は<a href={{missionLink}} style="color: #00BBC7;">こちら</a>からセラピストにご依頼ください。<br>
+            運営会社：株式会社バックテック
+          </td>
+        </tr>
       </table>
     </body>
 </html>
