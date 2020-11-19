@@ -6,25 +6,8 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
       <meta name="viewport" width=device-width" />
     </head>
-    <body>
+    <body style="-webkit-text-size-adjust:100%">
       <style>
-        body{
-          -webkit-text-size-adjust:100%
-        }
-        table{
-          width:100%;
-          margin:0 auto;
-          max-width: 600px"
-        }
-        .main{
-          position: absolute;
-          width: 600px;
-          height: 696px;
-          left: 100px;
-          right: 100px;
-          top: 10px;
-          background: #FFFFFF;
-        }
         .mission{
           /* ミッションの時間だよ！ */
           position: static;
@@ -43,56 +26,38 @@
           flex: none;
           order: 1;
           align-self: center;
-          flex-grow: 0;
-          margin: 0px 20px;
-        }
-        .pokesera{
-          /* img */
-          position: static;
-          width: 500px;
-          height: 270px;
-          left: 0px;
-          top: 0px;
-          /* White_#ffffff */
-          background: #ffffff;
-          /* Gray 5 */
-          border: 1px solid #E0E0E0;
-          box-sizing: border-box;
-          /* Inside Auto Layout */
-          flex: none;
-          order: 0;
-          align-self: center;
-          flex-grow: 0;
-        }
-        .explanation{
-          font-size: 12px;
+          margin: 0px 130px;
         }
       </style>
-      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%; border:none; margin:0 auto; max-width: 600px;">
+      <![if gte mso 9]>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%; border:none; margin:0 auto; width: 600px;">
         <tr>
           <td style="text-align: center;">
             <br><br>
-            <img src="https://pockettherapist.azureedge.net/mail/missionTime/logo.png"><br><br>
+            <![endif]-->
+            <img style="position: flex; flex-direction: column; width: 140px; height: 19.39px; margin: 0px 350px; box-sizing: border-box;" src="https://pockettherapist.azureedge.net/mail/missionTime/logo.png"><br><br>
           </td>
         </tr>
         <tr>
           <td style="text-align: center;">
-            <img class="pokesera" src="https://pockettherapist.azureedge.net/mail/missionTime/missionTime.png">
+            <img style="position: flex; display: block; flex-direction: column; width: 500px; height: 270px; margin: 0px 160px; background: #ffffff; border: 1px solid #E0E0E0; box-sizing: border-box;" src="https://pockettherapist.azureedge.net/mail/missionTime/missionTime.png">
           </td>
         </tr>
         <tr>
           <td style="text-align: center;">
             <br>
             <p class="mission">ミッションの時間だよ🎵🎵</p><br>
-            <button style="position: static; display: block; margin-left: auto; margin-right: auto; flex-direction: column; margin: 0px 160px; height: 50px; width: 320px; left: 552px; top: 463px; background: #00BBC7; border-radius: 8px;"><a href={{missionContentLink}} style="color: #ffffff; line-height: 50px; margin: 0px 80px 0px 80px;">ミッション詳細を見る</a></button><br><br>
+            <span style="position: flex; display: block; flex-direction: column; margin: 0px 255px; height: 50px; width: 320px; background: #00BBC7; border-radius: 8px;"><a href={{missionContentLink}} style="color: #ffffff; line-height: 50px; margin: 0px 85px; font-size: 14px;">ミッション詳細を見る</a></span><br><br>
           </td>
         </tr>
         <tr>
-          <td class="explanation">
-            ミッション内容・時間の変更は<a href={{missionCommentLink}} style="color: #00BBC7;">こちら</a>からセラピストにご依頼ください。<br>
-            運営会社：株式会社バックテック
+          <td>
+            <p style="font-size: 12px; position: flex; display: block; flex-direction: column; margin: 0px 160px;">ミッション内容・時間の変更は<a href={{missionCommentLink}} style="color: #00BBC7;">こちら</a>からセラピストにご依頼ください。<br></p>
+            <p style="font-size: 12px; position: flex; display: block; flex-direction: column; margin: 0px 160px;">運営会社：株式会社バックテック</p>
           </td>
         </tr>
+      <![if gte mso 9]>
       </table>
+      <![endif]-->
     </body>
 </html>
